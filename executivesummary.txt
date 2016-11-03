@@ -1,35 +1,31 @@
-## I'm developing a project called...
-
-
-## Here's the elevator pitch...
-Simple. Basic. Powerful.
-
-Our aim was to build an extremely easy to use method for workers to report their workday conditions and for crew leaders to be able to quickly access this information and make changes as they see fit, while also educating workers on their OSHA rights.
-
-## It's built with...
-HTML, CSS, JavaScript, Possibly SQL
-
-## The Team
-Aida El Kouri, Itzel Cantu, James Patterson, Jacob Diaz
-
 ## Web, Mobile App, or Something Else?
-Web app designed to work on mobile as well as tablet interfaces.
+
+Our product is a web app optimized for tablet use. Essentially, the site would be pulled up on 4-5 tablet check out stations for the workers to use as they are leaving the worksite.
 
 ## Executive Summary -
 
+So what is ___? The ___ is a tool designed to connect and empower workers and crew leaders. The web app consists of several different pages. At the heart of the app is the daily check in. The daily check in is a quick survey consisting of several questions about employee health during work. Data entered by workers, such as number of bathroom breaks, whether they've eaten, heat levels, will be sent to crew leaders and farm managers so that policies can be better designed and implemented for the betterment of the farm ecosystem. In addition to the daily check in, employees may also access a "File a complaint" page. At the moment, one of the main challenges the customers discussed was helping cultivate motivation in laborers to reach out when they are facing obstacles in the workplace, so we believe providing a one stop, quick entry complaint page which can be relayed to the crew leaders will eliminate a lot of these problems. In addition, there is also an OSHA regulations page, which we want to utilize to simplify OSHA regulations in a easy to understand manner so workers are fully aware of their rights. Lastly, the web app features a break timer. Another problem that farm managers relayed to us was the difficulty of ensuring users take breaks. Whether implemented anonymously or not, the break timer could help crew leaders track average break time and whether people are meeting break requirements as well as giving workers the power to track their breaks.
 
 ## Design/Features -
-When users first open the web app, they are greeted with the landing page shown below. They may select to either learn more about OSHA regulations or do the daily check in. 
+
+If you take a look at the first image of the ZIP file included below, you will see the daily check in page. The check in page features six main questions outlined below along with possible answers:
+
+*  How much water have you drank? 1, 2, or 3 bottles.
+*  How many times have you been to the bathroom? 0, 1, or 2 times.
+*  Have you eaten today? Yes or no.
+*  Are you feeling sick? How much pain are you in? 1, 2, or 3.
+*  How are the heat levels? Too hot or okay.
+*  Have you used sunscreen? Yes or no.
+
+The six questions we developed are designed to provide a holistic view of employee health, however _can be interchanged depending on the needs of specific work environments_. The first thing you may notice about the daily check in is the lack of words. This was done purely intentionally, as we understand the need to avoid the language barrier. By making things purely visual and simple to understand, we _open the survey to all workers regardless of nationality or literacy_. The daily check in is designed to be short, quick, and easy for employees to complete on a regular basis, but _data heavy and quantifiable_ enough for crew leaders to take action based on the data.
+
+The next image you see in the ZIP file is the navigation bar extended. By clicking on the plus button available next to the header of each screen, users may access this side navigation bar to navigate to various screens. At the moment, the OSHA regulations tab simply takes you to the OSHA website with workers rights, however in the future, we would like to implement a fully simplified explanation of OSHA rules and rights.
+
+Next, we have two images of the break timer. The break timer could feature a visual component, but for now just has a bar that features time left. The bar is either green or red, depending on whether the worker has time left or not. Again, this was a design choice made _to eliminate as much text as possible within the web app._ 
+
+Lastly, you see the File a Complaint page. Once again, this page was designed to be extremely open ended so that employees did not feel bogged down to enter a lot of information. Some ideas for further improving this would be to include a contact information form at the bottom where people can enter a number for them to be contacted back. 
+
+## Roles -
 
 
-NAME is comprised of two essential features: a daily check in and an osha education part. The daily check in is a short survey workers should fill out at the end of every day. The survey consists of questions about how much water workers have drank, whether they've gone to the bathroom, and how they are feeling. These questions are always open to change and questions more specific to certain farms or workplaces can always be added in. At the end is also an open ended questionwhere workers may voice safety concerns or workplace complaints. The following is a prototype of what the check in looks like.
-
-As you can see, the design is extremely visual and basic. That's the whole intention. With little written words used, people of all backgrounds can interpret the symbols regardless of language barrier. The form was designed to be extremely short as well, so that workers don't feel like it is a chore.
-
-The other crucial feature to the web app is the OSHA Wiki/FAQ. One of the most challenging parts to workers, especially those with limited literacy, is understanding the complicated and confusing legalities of the actual OSHA regulations. Our goal was to simplify some of the key questions workers may have. In addition, after reading the Wiki, they have the option to complete a short quiz which tess their knowledge of the information. This quiz will contain very fundamental ethical rules that workers should know about their workplace rights.
-
-## Roles
-Survey development and data relay - Aida El Kouri
-Landing page design and UI improvement - Itzel Cantu
-OSHA quiz design - James Patterson
-OSHA wikipedia design - Jacob Diaz
+**All main benefits are italicized to better highlight the multitude of advantages this product offers.**
