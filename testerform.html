@@ -1,0 +1,92 @@
+<html>
+<h1>TESTER BUTTONS</h1>
+<div class="healthpart">
+<div class = "arrow_box" style="float: left; height: 25%; width: 75%;">
+<form>
+    <div class="cc-selector" style="position: absolute; top: 20; left: 20;">
+        <input id="happy" type="radio" name="health" value="happy" />
+        <label class="drinkcard-cc happy" for="happy"></label>
+        <input id="sad" type="radio" name="health" value="sad" />
+        <label class="drinkcard-cc sad"for="sad"></label>
+        <input id="sick" type="radio" name="health" value="sick" />
+        <label class="drinkcard-cc sick" style="width: 100%; height: 100%;"for="sick"></label>
+    </div>
+</form>
+</div>
+
+<style>
+
+
+.arrow_box {
+	position: relative;
+	background: #ffffff;
+	border: 6px solid black;
+  height: 100px;
+}
+.arrow_box:after, .arrow_box:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #ffffff;
+	border-width: 30px;
+	margin-top: -30px;
+}
+
+
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-right-color: black;
+	border-width: 38px;
+	margin-top: -38px;
+}
+
+.cc-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+.happy{background-image:url("/Users/aidaelkouri/Desktop/HACK/happy.png"); pos}
+.sad{background-image:url("/Users/aidaelkouri/Desktop/HACK/sad.png");}
+.sick{background-image:url("/Users/aidaelkouri/Desktop/HACK/sick.png");}
+
+.cc-selector input:active +.drinkcard-cc{opacity: .9;}
+.cc-selector input:checked +.drinkcard-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.drinkcard-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:100px;height:70px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.drinkcard-cc:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+/* Extras */
+a:visited{color:#888}
+a{color:#444;text-decoration:none;}
+p{margin-bottom:.3em;}
+</style>
+</html>

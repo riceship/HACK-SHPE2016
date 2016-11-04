@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+<body>
+  <div class="header">11/2/2016</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">File Complaint</a>
+  <a href="#">OSHA Regulations</a>
+  <a href="#">Break Timer</a>
+</div>
+
+<div id="main"><span class="plus" style="position: absolute; top: 0; font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+</body>
+<div class="survey">
+<img src="/Users/aidaelkouri/Desktop/HACK/LAYOUT.png" style="width: 80%; margin-left: 10%;">
+<div class="cc-selector">
+    <input checked="checked" id="happy" type="radio" name="credit-card" value="happy" />
+    <label class="drinkcard-cc happy" for="happy"></label>
+    <input id="sad" type="radio" name="credit-card" value="sad" />
+    <label class="drinkcard-cc sad"for="sad"></label>
+</div>
+</div>
+
+<style>
+
+body {
+    font-family: 'Oswald', sans-serif;
+    transition: background-color .5s;
+    background-color: rgba(23,51,62,0.4);
+}
+
+form{
+  padding: 3px;
+  margin-top: 7%;
+  margin-left: 6%;
+  z-index: 10000;
+}
+
+.cc-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+
+.cc-selector-2 input{
+    position:absolute;
+    z-index:999;
+}
+
+.one{
+  background-image:url("/Users/aidaelkouri/Desktop/HACK/1.png");
+  }
+.two{
+  background-image:url("/Users/aidaelkouri/Desktop/HACK/2.png");
+}
+.three{
+  background-image: url("/Users/aidaelkouri/Desktop/HACK/3.png")
+}
+}
+.cc-selector-2 input:active +.drinkcard-cc, .cc-selector input:active +.drinkcard-cc{opacity: .9;}
+.cc-selector-2 input:checked +.drinkcard-cc, .cc-selector input:checked +.drinkcard-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.drinkcard-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:110px;height:200px;
+    margin-right: 5px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.drinkcard-cc:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+
+.header{
+  height:15%;
+  width: 40%;
+  position: relative;
+  top: 0%;
+  margin-left: 30%;
+  background-color: white;
+  color: black;
+  font-size: 80px;
+  text-align: center;
+  border-radius: 25px;
+  border: 7px solid black;
+}
+
+.survey{
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+</style>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("main").style.opacity=0;
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "rgba(23,51,62,0.4)";
+    document.getElementById("main").style.opacity=1;}
+
+
+</script>
+
+</body>
+</html>
