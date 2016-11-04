@@ -1,0 +1,86 @@
+<html>
+<body>
+<div class="header">11/2/2016
+</div>
+<div class="images">
+<img src="/Users/aidaelkouri/Desktop/templatebase.png" style="float: left;"></div>
+<div class="choices">
+<div class="water">
+<div class = "arrow_box" style="float: left; height: 25%; width: 75%;"></div></div>
+<div class="health-choice">
+<div class = "arrow_box" style="float: left; height: 25%; width: 75%; margin-top: 15%;"></div></div>
+<div class="bathroom-break">
+<div class = "arrow_box" style="float: left; height: 25%; width: 75%; margin-top: 15%;"></div>
+</div></div></div>
+</div>
+</div>
+</body>
+<style>
+
+body{
+  background-color: #17333E;
+}
+
+.arrow_box {
+	position: relative;
+	background: #ffffff;
+	border: 6px solid black;
+  height: 100px;
+}
+.arrow_box:after, .arrow_box:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #ffffff;
+	border-width: 30px;
+	margin-top: -30px;
+}
+
+
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-right-color: black;
+	border-width: 38px;
+	margin-top: -38px;
+}
+
+.images{
+  width: 10%;
+  position: relative;
+  top: 5%;
+  float: left;
+  margin-left: 05%;
+}
+
+.choices{
+  position: relative;
+  float: right;
+  top: 8%;
+  left: 10%;
+  width: 70%;
+}
+.header{
+  height:15%;
+  width: 80%;
+  position: relative;
+  top: 0%;
+  margin-left: 10%;
+  background-color: white;
+  color: black;
+  font-size: 120px;
+  text-align: center;
+  border-radius: 25px;
+  border: 7px solid black;
+  padding: 20px;
+}
+</style>
+</html>

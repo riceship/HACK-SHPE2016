@@ -1,0 +1,109 @@
+<html>
+
+<div class="question">
+  <div class="arrow_box" style="height: 20%;"><form>
+
+    <div class="cc-selector">
+        <input checked="checked" id="one" type="radio" name="credit-card" value="one" />
+        <label class="drinkcard-cc one" for="one"></label>
+        <input id="two" type="radio" name="credit-card" value="two" />
+        <label class="drinkcard-cc two"for="two"></label>
+        <input id="three" type="radio" name="credit-card" value="three" />
+        <label class="drinkcard-cc three"for="three"></label>
+    </div>
+    </form></div>
+</div>
+</div>
+
+<style>
+form{
+  position: absolute;
+  padding: 3px;
+  margin-top: 7%;
+  margin-left: 6%;
+}
+.arrow_box {
+	position: relative;
+	background: #ffffff;
+	border: 4px solid #000000;
+}
+.arrow_box:after, .arrow_box:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-right-color: #ffffff;
+	border-width: 40px;
+	margin-top: -40px;
+}
+.arrow_box:before {
+	border-color: rgba(0, 0, 0, 0);
+	border-right-color: #000000;
+	border-width: 46px;
+	margin-top: -46px;
+}
+.question{
+  width: 45%;
+  position: relative;
+  top: 40;
+  left: 70;
+}
+
+.cc-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+
+.cc-selector-2 input{
+    position:absolute;
+    z-index:999;
+}
+
+.one{
+  background-image:url("/Users/aidaelkouri/Desktop/HACK/1.png");
+  }
+.two{
+  background-image:url("/Users/aidaelkouri/Desktop/HACK/2.png");
+}
+.three{
+  background-image: url("/Users/aidaelkouri/Desktop/HACK/3.png")
+}
+}
+.cc-selector-2 input:active +.drinkcard-cc, .cc-selector input:active +.drinkcard-cc{opacity: .9;}
+.cc-selector-2 input:checked +.drinkcard-cc, .cc-selector input:checked +.drinkcard-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.drinkcard-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:110px;height:200px;
+    margin-right: 5px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.drinkcard-cc:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+</style>
+</html>
